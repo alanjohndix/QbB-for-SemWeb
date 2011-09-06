@@ -1,0 +1,32 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+p, th, td, dt, dl, li  {
+	font-size: small;
+}
+h1, .qbb-heading {
+	font-size: x-large;
+	font-weight: bold;
+	padding-bottom: 8px;
+	color: #003366;
+}
+h2 {
+	font-size: large;
+	font-weight: bold;
+	color: #003366;
+	background-color: #CCC;
+	margin-top: 50px;
+	padding-left: 4px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+h3 {
+	font-size: medium;
+	font-weight: bold;
+	color: #003366;
+	background-color: #EEE;
+	margin-top: 50px;
+	padding-left: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
