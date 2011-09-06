@@ -1,0 +1,133 @@
+8
+
+dir
+24
+https://omnius.googlecode.com/svn/branches/sparql_optimiser/lib/arc
+https://omnius.googlecode.com/svn
+
+
+
+2010-11-12T14:32:00.906352Z
+23
+nadeem.shabir
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+2087f12c-00e1-11de-a3ef-1f8437fb274a
+
+parsers
+dir
+
+ARC2_Reader.php
+file
+
+
+
+
+2010-11-12T14:51:34.000000Z
+e11d6aab1bae05401d4d14a5d401ba13
+2010-11-12T14:32:00.906352Z
+23
+nadeem.shabir
+has-props
+
+ARC2_Class.php
+file
+
+
+
+
+2010-11-12T14:51:34.000000Z
+040d1e99e8d661a4dd92a1045455c61f
+2010-11-12T14:32:00.906352Z
+23
+nadeem.shabir
+has-props
+
+ARC2_Resource.php
+file
+
+
+
+
+2010-11-12T14:51:34.000000Z
+a01622249ed6a23727d1289dd8cbf630
+2010-11-12T14:32:00.906352Z
+23
+nadeem.shabir
+has-props
+
+ARC2_getPreferredFormat.php
+file
+
+
+
+
+2010-11-12T14:51:34.000000Z
+db8c01cd7295bfd118711714e8b79157
+2010-11-12T14:32:00.906352Z
+23
+nadeem.shabir
+has-props
+
+ARC2_getFormat.php
+file
+
+
+
+
+2010-11-12T14:51:34.000000Z
+b8f9edd203adba454292985fe18e7250
+2010-11-12T14:32:00.906352Z
+23
+nadeem.shabir
+has-props
+
+.gitignore
+file
+
+
+
+
+2010-11-12T14:51:34.000000Z
+11c73378951b7868f13276f4e0ce6d12
+2010-11-12T14:32:00.906352Z
+23
+nadeem.shabir
+
+sparqlscript
+dir
+
+serializers
+dir
+
+store
+dir
+
+ARC2.php
+file
+
+
+
+
+2010-11-12T14:51:34.000000Z
+657291bc1c67b5a8a866797314201b95
+2010-11-12T14:32:00.906352Z
+23
+nadeem.shabir
+has-props
+
+extractors
+dir
+

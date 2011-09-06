@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/45/trunk/docs/moriarty
+END
+package-globals.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/45/trunk/docs/moriarty/package-globals.html
+END
+httprequestfactory.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/45/trunk/docs/moriarty/httprequestfactory.html
+END
+augmentservice.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/45/trunk/docs/moriarty/augmentservice.html
+END
+snapshots.html
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/45/trunk/docs/moriarty/snapshots.html
+END
+sparqlservice.html
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/45/trunk/docs/moriarty/sparqlservice.html
+END
+httprequest.html
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/45/trunk/docs/moriarty/httprequest.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/45/trunk/docs/moriarty/package-tree.html
+END
+store.html
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/45/trunk/docs/moriarty/store.html
+END
+privategraph.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/45/trunk/docs/moriarty/privategraph.html
+END
+multisparqlservice.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/45/trunk/docs/moriarty/multisparqlservice.html
+END
+storegroupconfig.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/45/trunk/docs/moriarty/storegroupconfig.html
+END
+metabox.html
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/45/trunk/docs/moriarty/metabox.html
+END
+graph.html
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/45/trunk/docs/moriarty/graph.html
+END
+networkresource.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/45/trunk/docs/moriarty/networkresource.html
+END
+fieldpredicatemap.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/45/trunk/docs/moriarty/fieldpredicatemap.html
+END
+facetservice.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/45/trunk/docs/moriarty/facetservice.html
+END
+httpcache.html
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/45/trunk/docs/moriarty/httpcache.html
+END
+valuepool.html
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/45/trunk/docs/moriarty/valuepool.html
+END
+storecollection.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/45/trunk/docs/moriarty/storecollection.html
+END
+storegroup.html
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/45/trunk/docs/moriarty/storegroup.html
+END
+simplegraph.html
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/45/trunk/docs/moriarty/simplegraph.html
+END
+sparqlservicebase.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/45/trunk/docs/moriarty/sparqlservicebase.html
+END
+jobqueue.html
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/45/trunk/docs/moriarty/jobqueue.html
+END
+resourcelist.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/45/trunk/docs/moriarty/resourcelist.html
+END
+contentbox.html
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/45/trunk/docs/moriarty/contentbox.html
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/45/trunk/docs/moriarty/package-frame.html
+END
+queryprofile.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/45/trunk/docs/moriarty/queryprofile.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/45/trunk/docs/moriarty/package-summary.html
+END
+rollback.html
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/45/trunk/docs/moriarty/rollback.html
+END
+credentials.html
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/45/trunk/docs/moriarty/credentials.html
+END
+httpresponse.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/45/trunk/docs/moriarty/httpresponse.html
+END
+package-functions.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/45/trunk/docs/moriarty/package-functions.html
+END
+changeset.html
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/45/trunk/docs/moriarty/changeset.html
+END
+changesetbatch.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/45/trunk/docs/moriarty/changesetbatch.html
+END
+config.html
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/45/trunk/docs/moriarty/config.html
+END

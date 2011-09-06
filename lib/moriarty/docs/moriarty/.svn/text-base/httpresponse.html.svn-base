@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+
+<meta name="generator" content="PHPDoctor 2RC2 (http://phpdoctor.sourceforge.net/)">
+<meta name="when" content="Tue, 09 Dec 2008 09:11:43 +0000">
+
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+<link rel="start" href="../overview-summary.html">
+
+<title>HttpResponse (Moriarty)</title>
+
+</head>
+<body id="definition" onload="parent.document.title=document.title;">
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/httpresponse.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<div class="qualifiedName">Moriarty.HttpResponse</div>
+
+<h1>Class HttpResponse</h1>
+
+<pre class="tree"><strong>HttpResponse</strong><br /></pre>
+
+<hr>
+
+<p class="signature">public  class <strong>HttpResponse</strong></p>
+
+<div class="comment" id="overview_description"><p>
+Represents an HTTP protocol response.
+/</p></div>
+
+<hr>
+
+<table id="summary_field">
+<tr><th colspan="2">Field Summary</th></tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#body">$body</a></p><p class="description">
+The entity body returned with the response</p></td>
+</tr>
+<tr>
+<td class="type"> array</td>
+<td class="description"><p class="name"><a href="#headers">$headers</a></p><p class="description">
+The HTTP headers returned with this response. </p></td>
+</tr>
+<tr>
+<td class="type"> array</td>
+<td class="description"><p class="name"><a href="#info">$info</a></p><p class="description">
+Additional information about this response</p></td>
+</tr>
+<tr>
+<td class="type"> <a href="../moriarty/httprequest.html">HttpRequest</a></td>
+<td class="description"><p class="name"><a href="#request">$request</a></p><p class="description">
+The request that was responsible for generating this response</p></td>
+</tr>
+<tr>
+<td class="type"> int</td>
+<td class="description"><p class="name"><a href="#status_code">$status_code</a></p><p class="description">
+The HTTP status code of the response</p></td>
+</tr>
+</table>
+
+<table id="summary_constr">
+<tr><th colspan="2">Constructor Summary</th></tr>
+<tr>
+<td class="description"><p class="name"><a href="#HttpResponse()">HttpResponse</a>(int status_code)</p><p class="description">
+Create a new instance of this class</p></td>
+</tr>
+</table>
+
+<table id="summary_method">
+<tr><th colspan="2">Method Summary</th></tr>
+<tr>
+<td class="type"> boolean</td>
+<td class="description"><p class="name"><a href="#is_cacheable()">is_cacheable</a>()</p><p class="description">
+Tests whether this response is suitable for caching</p></td>
+</tr>
+<tr>
+<td class="type"> boolean</td>
+<td class="description"><p class="name"><a href="#is_success()">is_success</a>()</p><p class="description">
+Tests whether the response indicates the request was successful</p></td>
+</tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#to_string()">to_string</a>()</p><p class="description">
+Obtain a string representation of this response</p></td>
+</tr>
+</table>
+
+<h2 id="detail_field">Field Detail</h2>
+<h3 id="body">body</h3>
+<code class="signature">public  string <strong>$body</strong></code>
+<div class="details">
+<p>
+The entity body returned with the response</p></div>
+
+<hr>
+
+<h3 id="headers">headers</h3>
+<code class="signature">public  array <strong>$headers</strong> = array()</code>
+<div class="details">
+<p>
+The HTTP headers returned with this response. This is an associative array whose keys are the header name and values are the header values.</p></div>
+
+<hr>
+
+<h3 id="info">info</h3>
+<code class="signature">public  array <strong>$info</strong> = array()</code>
+<div class="details">
+<p>
+Additional information about this response</p></div>
+
+<hr>
+
+<h3 id="request">request</h3>
+<code class="signature">public  <a href="../moriarty/httprequest.html">HttpRequest</a> <strong>$request</strong></code>
+<div class="details">
+<p>
+The request that was responsible for generating this response</p></div>
+
+<hr>
+
+<h3 id="status_code">status_code</h3>
+<code class="signature">public  int <strong>$status_code</strong></code>
+<div class="details">
+<p>
+The HTTP status code of the response</p></div>
+
+<hr>
+
+<h2 id="detail_constr">Constructor Detail</h2>
+<h3 id="HttpResponse()">HttpResponse</h3>
+<code class="signature">public <strong>HttpResponse</strong>(int status_code)</code>
+<div class="details">
+<p>
+Create a new instance of this class</p><dl>
+<dt>Parameters:</dt>
+<dd>status_code - the status code of the response</dd>
+</dl>
+</div>
+
+<hr>
+
+<h2 id="detail_method">Method Detail</h2>
+<h3 id="is_cacheable()">is_cacheable</h3>
+<code class="signature">public  boolean <strong>is_cacheable</strong>()</code>
+<div class="details">
+<p>
+Tests whether this response is suitable for caching</p><dl>
+<dt>Returns:</dt>
+<dd>true if the response can be cached, false otherwise</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="is_success()">is_success</h3>
+<code class="signature">public  boolean <strong>is_success</strong>()</code>
+<div class="details">
+<p>
+Tests whether the response indicates the request was successful</p><dl>
+<dt>Returns:</dt>
+<dd>true if the status code is between 200 and 299 inclusive, false otherwise</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="to_string()">to_string</h3>
+<code class="signature">public  string <strong>to_string</strong>()</code>
+<div class="details">
+<p>
+Obtain a string representation of this response</p></div>
+
+<hr>
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/httpresponse.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<p id="footer">This document was generated by <a href="http://phpdoctor.sourceforge.net/">PHPDoctor: The PHP Documentation Creator</a></p>
+
+</body>
+
+</html>

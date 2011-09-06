@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/23/branches/sparql_optimiser/lib/arc
+END
+ARC2_Reader.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/23/branches/sparql_optimiser/lib/arc/ARC2_Reader.php
+END
+ARC2_Class.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/23/branches/sparql_optimiser/lib/arc/ARC2_Class.php
+END
+ARC2_Resource.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/23/branches/sparql_optimiser/lib/arc/ARC2_Resource.php
+END
+ARC2_getPreferredFormat.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/23/branches/sparql_optimiser/lib/arc/ARC2_getPreferredFormat.php
+END
+ARC2_getFormat.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/23/branches/sparql_optimiser/lib/arc/ARC2_getFormat.php
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/23/branches/sparql_optimiser/lib/arc/.gitignore
+END
+ARC2.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/23/branches/sparql_optimiser/lib/arc/ARC2.php
+END

@@ -1,0 +1,34 @@
+8
+
+dir
+24
+https://omnius.googlecode.com/svn/branches/sparql_optimiser/lib
+https://omnius.googlecode.com/svn
+
+
+
+2010-11-12T14:32:00.906352Z
+23
+nadeem.shabir
+has-props
+
+svn:special svn:externals svn:needs-lock
+svn:externals
+
+
+
+
+
+
+
+
+
+
+2087f12c-00e1-11de-a3ef-1f8437fb274a
+
+arc
+dir
+
+optimiser
+dir
+

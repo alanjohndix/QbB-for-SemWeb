@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+
+<meta name="generator" content="PHPDoctor 2RC2 (http://phpdoctor.sourceforge.net/)">
+<meta name="when" content="Tue, 09 Dec 2008 09:11:43 +0000">
+
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+<link rel="start" href="../overview-summary.html">
+
+<title>Config (Moriarty)</title>
+
+</head>
+<body id="definition" onload="parent.document.title=document.title;">
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/config.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<div class="qualifiedName">Moriarty.Config</div>
+
+<h1>Class Config</h1>
+
+<pre class="tree"><strong>Config</strong><br /></pre>
+
+<hr>
+
+<p class="signature">public  class <strong>Config</strong></p>
+
+<div class="comment" id="overview_description"><p>
+A helper class to assist with configuring a store.
+/</p></div>
+
+<hr>
+
+<table id="summary_constr">
+<tr><th colspan="2">Constructor Summary</th></tr>
+<tr>
+<td class="description"><p class="name"><a href="#Config()">Config</a>(string uri, <a href="../moriarty/credentials.html">Credentials</a> credentials)</p><p class="description">
+Create a new instance of this class.</p></td>
+</tr>
+</table>
+
+<table id="summary_method">
+<tr><th colspan="2">Method Summary</th></tr>
+<tr>
+<td class="type"> <a href="../moriarty/fieldpredicatemap.html">FieldPredicateMap</a></td>
+<td class="description"><p class="name"><a href="#get_first_fpmap()">get_first_fpmap</a>()</p><p class="description">
+Obtain a reference to the store's field/predicate map. </p></td>
+</tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#get_first_fpmap_uri()">get_first_fpmap_uri</a>()</p><p class="description">
+Gets the URI of the first field/predicate map in the store.
+</p></td>
+</tr>
+<tr>
+<td class="type"> <a href="../moriarty/queryprofile.html">QueryProfile</a></td>
+<td class="description"><p class="name"><a href="#get_first_query_profile()">get_first_query_profile</a>()</p><p class="description">
+Obtain a reference to the store's query profile. </p></td>
+</tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#get_first_query_profile_uri()">get_first_query_profile_uri</a>()</p><p class="description">
+Gets the URI of the first query profile in the store.
+</p></td>
+</tr>
+</table>
+
+<h2 id="detail_constr">Constructor Detail</h2>
+<h3 id="Config()">Config</h3>
+<code class="signature">public <strong>Config</strong>(string uri, <a href="../moriarty/credentials.html">Credentials</a> credentials)</code>
+<div class="details">
+<p>
+Create a new instance of this class.</p><dl>
+<dt>Parameters:</dt>
+<dd>uri - URI of the store config</dd>
+<dd>credentials - the credentials to use for authenticated requests (optional)</dd>
+</dl>
+</div>
+
+<hr>
+
+<h2 id="detail_method">Method Detail</h2>
+<h3 id="get_first_fpmap()">get_first_fpmap</h3>
+<code class="signature">public  <a href="../moriarty/fieldpredicatemap.html">FieldPredicateMap</a> <strong>get_first_fpmap</strong>()</code>
+<div class="details">
+<p>
+Obtain a reference to the store's field/predicate map. This needs to be subsequently fetched using get_from_network</p></div>
+
+<hr>
+
+<h3 id="get_first_fpmap_uri()">get_first_fpmap_uri</h3>
+<code class="signature">public  string <strong>get_first_fpmap_uri</strong>()</code>
+<div class="details">
+<p>
+Gets the URI of the first field/predicate map in the store.
+This is much more complicated than first appears since a store
+can be configured (by Talis) to hold its field/predicate map
+anywhere. This method understands all the existing stores and their
+URI layouts.
+</p></div>
+
+<hr>
+
+<h3 id="get_first_query_profile()">get_first_query_profile</h3>
+<code class="signature">public  <a href="../moriarty/queryprofile.html">QueryProfile</a> <strong>get_first_query_profile</strong>()</code>
+<div class="details">
+<p>
+Obtain a reference to the store's query profile. This needs to be subsequently fetched using get_from_network</p></div>
+
+<hr>
+
+<h3 id="get_first_query_profile_uri()">get_first_query_profile_uri</h3>
+<code class="signature">public  string <strong>get_first_query_profile_uri</strong>()</code>
+<div class="details">
+<p>
+Gets the URI of the first query profile in the store.
+This is much more complicated than first appears since a store
+can be configured (by Talis) to hold its field/predicate map
+anywhere. This method understands all the existing stores and their
+URI layouts.
+</p></div>
+
+<hr>
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/config.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<p id="footer">This document was generated by <a href="http://phpdoctor.sourceforge.net/">PHPDoctor: The PHP Documentation Creator</a></p>
+
+</body>
+
+</html>

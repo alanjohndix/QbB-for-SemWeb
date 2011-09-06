@@ -1,0 +1,352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+
+<meta name="generator" content="PHPDoctor 2RC2 (http://phpdoctor.sourceforge.net/)">
+<meta name="when" content="Tue, 09 Dec 2008 09:11:43 +0000">
+
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+<link rel="start" href="../overview-summary.html">
+
+<title>SparqlServiceBase (Moriarty)</title>
+
+</head>
+<body id="definition" onload="parent.document.title=document.title;">
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/sparqlservicebase.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<div class="qualifiedName">Moriarty.SparqlServiceBase</div>
+
+<h1>Class SparqlServiceBase</h1>
+
+<pre class="tree"><strong>SparqlServiceBase</strong><br /></pre>
+
+<hr>
+
+<p class="signature">public  class <strong>SparqlServiceBase</strong></p>
+
+<div class="comment" id="overview_description"><p>
+Represents the base class for various sparql services.
+/</p></div>
+
+<hr>
+
+<table id="summary_constr">
+<tr><th colspan="2">Constructor Summary</th></tr>
+<tr>
+<td class="description"><p class="name"><a href="#SparqlServiceBase()">SparqlServiceBase</a>(string uri, <a href="../moriarty/credentials.html">Credentials</a> credentials)</p><p class="description">
+Create a new instance of this class</p></td>
+</tr>
+</table>
+
+<table id="summary_method">
+<tr><th colspan="2">Method Summary</th></tr>
+<tr>
+<td class="type"> <a href="../moriarty/httpresponse.html">HttpResponse</a></td>
+<td class="description"><p class="name"><a href="#ask()">ask</a>(string query)</p><p class="description">
+Execute an ask sparql query</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#construct_to_simple_graph()">construct_to_simple_graph</a>(mixed query)</p><p class="description"></p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#construct_to_triple_list()">construct_to_triple_list</a>(mixed query)</p><p class="description"></p></td>
+</tr>
+<tr>
+<td class="type"> <a href="../moriarty/httpresponse.html">HttpResponse</a></td>
+<td class="description"><p class="name"><a href="#describe()">describe</a>(mixed uri)</p><p class="description">
+Obtain a bounded description of a given resource</p></td>
+</tr>
+<tr>
+<td class="type"> <a href="../moriarty/simplegraph.html">SimpleGraph</a></td>
+<td class="description"><p class="name"><a href="#describe_to_simple_graph()">describe_to_simple_graph</a>(mixed uri)</p><p class="description">
+Obtain a bounded description of a given resource as a SimpleGraph. </p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#describe_to_triple_list()">describe_to_triple_list</a>(mixed uri)</p><p class="description"></p></td>
+</tr>
+<tr>
+<td class="type"> <a href="../moriarty/httpresponse.html">HttpResponse</a></td>
+<td class="description"><p class="name"><a href="#graph()">graph</a>(string query)</p><p class="description">
+Execute a graph type sparql query, i.e. </p></td>
+</tr>
+<tr>
+<td class="type"> <a href="../moriarty/simplegraph.html">SimpleGraph</a></td>
+<td class="description"><p class="name"><a href="#graph_to_simple_graph()">graph_to_simple_graph</a>(string query)</p><p class="description">
+Execute a graph type sparql query and obtain the result as a SimpleGraph. </p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#graph_to_triple_list()">graph_to_triple_list</a>(mixed query)</p><p class="description"></p></td>
+</tr>
+<tr>
+<td class="type"> array</td>
+<td class="description"><p class="name"><a href="#parse_ask_results()">parse_ask_results</a>(string xml)</p><p class="description">
+Parse the SPARQL XML results format from an ask query. </p></td>
+</tr>
+<tr>
+<td class="type"> array</td>
+<td class="description"><p class="name"><a href="#parse_select_results()">parse_select_results</a>(string xml)</p><p class="description">
+Parse the SPARQL XML results format into an array. </p></td>
+</tr>
+<tr>
+<td class="type"> <a href="../moriarty/httpresponse.html">HttpResponse</a></td>
+<td class="description"><p class="name"><a href="#query()">query</a>(string query, string mime)</p><p class="description">
+Execute an arbitrary query on the sparql service</p></td>
+</tr>
+<tr>
+<td class="type"> <a href="../moriarty/httpresponse.html">HttpResponse</a></td>
+<td class="description"><p class="name"><a href="#select()">select</a>(string query)</p><p class="description">
+Execute a select sparql query</p></td>
+</tr>
+<tr>
+<td class="type"> array</td>
+<td class="description"><p class="name"><a href="#select_to_array()">select_to_array</a>(string query)</p><p class="description">
+Execute a select sparql query and return the results as an array. </p></td>
+</tr>
+</table>
+
+<h2 id="detail_constr">Constructor Detail</h2>
+<h3 id="SparqlServiceBase()">SparqlServiceBase</h3>
+<code class="signature">public <strong>SparqlServiceBase</strong>(string uri, <a href="../moriarty/credentials.html">Credentials</a> credentials)</code>
+<div class="details">
+<p>
+Create a new instance of this class</p><dl>
+<dt>Parameters:</dt>
+<dd>uri - URI of the sparql service</dd>
+<dd>credentials - the credentials to use for authenticated requests (optional)</dd>
+</dl>
+</div>
+
+<hr>
+
+<h2 id="detail_method">Method Detail</h2>
+<h3 id="ask()">ask</h3>
+<code class="signature">public  <a href="../moriarty/httpresponse.html">HttpResponse</a> <strong>ask</strong>(string query)</code>
+<div class="details">
+<p>
+Execute an ask sparql query</p><dl>
+<dt>Parameters:</dt>
+<dd>query - the ask query to execute</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="construct_to_simple_graph()">construct_to_simple_graph</h3>
+<code class="signature">public  void <strong>construct_to_simple_graph</strong>(mixed query)</code>
+<div class="details">
+<p></p><dl>
+<dt>Deprecated:</dt>
+<dd>use graph_to_simple_graph</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="construct_to_triple_list()">construct_to_triple_list</h3>
+<code class="signature">public  void <strong>construct_to_triple_list</strong>(mixed query)</code>
+<div class="details">
+<p></p><dl>
+<dt>Deprecated:</dt>
+<dd>triple lists are deprecated</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="describe()">describe</h3>
+<code class="signature">public  <a href="../moriarty/httpresponse.html">HttpResponse</a> <strong>describe</strong>(mixed uri)</code>
+<div class="details">
+<p>
+Obtain a bounded description of a given resource</p><dl>
+<dt>Parameters:</dt>
+<dd>uri - the URI of the resource to be described or an array of URIs</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="describe_to_simple_graph()">describe_to_simple_graph</h3>
+<code class="signature">public  <a href="../moriarty/simplegraph.html">SimpleGraph</a> <strong>describe_to_simple_graph</strong>(mixed uri)</code>
+<div class="details">
+<p>
+Obtain a bounded description of a given resource as a SimpleGraph. An empty SimpleGraph is returned if any HTTP errors occur.</p><dl>
+<dt>Parameters:</dt>
+<dd>uri - the URI of the resource to be described or an array of URIs</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="describe_to_triple_list()">describe_to_triple_list</h3>
+<code class="signature">public  void <strong>describe_to_triple_list</strong>(mixed uri)</code>
+<div class="details">
+<p></p><dl>
+<dt>Deprecated:</dt>
+<dd>triple lists are deprecated</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="graph()">graph</h3>
+<code class="signature">public  <a href="../moriarty/httpresponse.html">HttpResponse</a> <strong>graph</strong>(string query)</code>
+<div class="details">
+<p>
+Execute a graph type sparql query, i.e. a describe or a construct</p><dl>
+<dt>Parameters:</dt>
+<dd>query - the describe or construct query to execute</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="graph_to_simple_graph()">graph_to_simple_graph</h3>
+<code class="signature">public  <a href="../moriarty/simplegraph.html">SimpleGraph</a> <strong>graph_to_simple_graph</strong>(string query)</code>
+<div class="details">
+<p>
+Execute a graph type sparql query and obtain the result as a SimpleGraph. An empty SimpleGraph is returned if any HTTP errors occur.</p><dl>
+<dt>Parameters:</dt>
+<dd>query - the describe or construct query to execute</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="graph_to_triple_list()">graph_to_triple_list</h3>
+<code class="signature">public  void <strong>graph_to_triple_list</strong>(mixed query)</code>
+<div class="details">
+<p></p><dl>
+<dt>Deprecated:</dt>
+<dd>triple lists are deprecated</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="parse_ask_results()">parse_ask_results</h3>
+<code class="signature">public  array <strong>parse_ask_results</strong>(string xml)</code>
+<div class="details">
+<p>
+Parse the SPARQL XML results format from an ask query. </p><dl>
+<dt>Parameters:</dt>
+<dd>xml - the results XML to parse</dd>
+<dt>Returns:</dt>
+<dd>true if the query result was true, false otherwise</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="parse_select_results()">parse_select_results</h3>
+<code class="signature">public  array <strong>parse_select_results</strong>(string xml)</code>
+<div class="details">
+<p>
+Parse the SPARQL XML results format into an array. The array consist of one element per result. 
+Each element is an associative array where the keys correspond to the variable name and the values are
+another associative array with the following keys:
+<ul>
+<li><em>type</em> => the type of the result binding, one of 'uri', 'literal' or 'bnode'</li>
+<li><em>value</em> => the value of the result binding</li>
+<li><em>lang</em> => the language code (if any) of the result binding</li>
+<li><em>datatype</em> => the datatype uri (if any) of the result binding</li>
+</ul>
+For example: $results[2]['foo']['value'] will obtain the value of the foo variable for the third result</p><dl>
+<dt>Parameters:</dt>
+<dd>xml - the results XML to parse</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="query()">query</h3>
+<code class="signature">public  <a href="../moriarty/httpresponse.html">HttpResponse</a> <strong>query</strong>(string query, string mime)</code>
+<div class="details">
+<p>
+Execute an arbitrary query on the sparql service</p><dl>
+<dt>Parameters:</dt>
+<dd>query - the query to execute</dd>
+<dd>mime - the media type of the expected response (optional, defaults to RDF/XML and SPARQL results XML)</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="select()">select</h3>
+<code class="signature">public  <a href="../moriarty/httpresponse.html">HttpResponse</a> <strong>select</strong>(string query)</code>
+<div class="details">
+<p>
+Execute a select sparql query</p><dl>
+<dt>Parameters:</dt>
+<dd>query - the select query to execute</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="select_to_array()">select_to_array</h3>
+<code class="signature">public  array <strong>select_to_array</strong>(string query)</code>
+<div class="details">
+<p>
+Execute a select sparql query and return the results as an array. An empty array is returned if any HTTP errors occur.</p><dl>
+<dt>Parameters:</dt>
+<dd>query - the select query to execute</dd>
+<dt>Returns:</dt>
+<dd>parsed results in format returned by parse_select_results method</dd>
+</dl>
+</div>
+
+<hr>
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/sparqlservicebase.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<p id="footer">This document was generated by <a href="http://phpdoctor.sourceforge.net/">PHPDoctor: The PHP Documentation Creator</a></p>
+
+</body>
+
+</html>

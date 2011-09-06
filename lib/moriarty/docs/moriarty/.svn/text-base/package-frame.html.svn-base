@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+
+<meta name="generator" content="PHPDoctor 2RC2 (http://phpdoctor.sourceforge.net/)">
+<meta name="when" content="Tue, 09 Dec 2008 09:11:43 +0000">
+
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+<link rel="start" href="../overview-summary.html">
+
+<title>Moriarty (Moriarty)</title>
+
+</head>
+<body id="frame">
+
+<h1><a href="package-summary.html" target="main">Moriarty</a></h1>
+
+<h2>Classes</h2>
+<ul>
+<li><a href="../moriarty/augmentservice.html" target="main">AugmentService</a></li>
+<li><a href="../moriarty/changeset.html" target="main">ChangeSet</a></li>
+<li><a href="../moriarty/changesetbatch.html" target="main">ChangeSetBatch</a></li>
+<li><a href="../moriarty/config.html" target="main">Config</a></li>
+<li><a href="../moriarty/contentbox.html" target="main">Contentbox</a></li>
+<li><a href="../moriarty/credentials.html" target="main">Credentials</a></li>
+<li><a href="../moriarty/facetservice.html" target="main">FacetService</a></li>
+<li><a href="../moriarty/fieldpredicatemap.html" target="main">FieldPredicateMap</a></li>
+<li><a href="../moriarty/graph.html" target="main">Graph</a></li>
+<li><a href="../moriarty/httpcache.html" target="main">HttpCache</a></li>
+<li><a href="../moriarty/httprequest.html" target="main">HttpRequest</a></li>
+<li><a href="../moriarty/httprequestfactory.html" target="main">HttpRequestFactory</a></li>
+<li><a href="../moriarty/httpresponse.html" target="main">HttpResponse</a></li>
+<li><a href="../moriarty/jobqueue.html" target="main">JobQueue</a></li>
+<li><a href="../moriarty/metabox.html" target="main">Metabox</a></li>
+<li><a href="../moriarty/multisparqlservice.html" target="main">MultiSparqlService</a></li>
+<li><a href="../moriarty/networkresource.html" target="main">NetworkResource</a></li>
+<li><a href="../moriarty/privategraph.html" target="main">PrivateGraph</a></li>
+<li><a href="../moriarty/queryprofile.html" target="main">QueryProfile</a></li>
+<li><a href="../moriarty/resourcelist.html" target="main">ResourceList</a></li>
+<li><a href="../moriarty/rollback.html" target="main">Rollback</a></li>
+<li><a href="../moriarty/simplegraph.html" target="main">SimpleGraph</a></li>
+<li><a href="../moriarty/snapshots.html" target="main">Snapshots</a></li>
+<li><a href="../moriarty/sparqlservice.html" target="main">SparqlService</a></li>
+<li><a href="../moriarty/sparqlservicebase.html" target="main">SparqlServiceBase</a></li>
+<li><a href="../moriarty/store.html" target="main">Store</a></li>
+<li><a href="../moriarty/storecollection.html" target="main">StoreCollection</a></li>
+<li><a href="../moriarty/storegroup.html" target="main">StoreGroup</a></li>
+<li><a href="../moriarty/storegroupconfig.html" target="main">StoreGroupConfig</a></li>
+<li><a href="../moriarty/valuepool.html" target="main">ValuePool</a></li>
+</ul>
+
+<h2>Globals</h2>
+<ul>
+<li><a href="../moriarty/package-globals.html#ANALYZER_KEYWORD" target="main">ANALYZER_KEYWORD</a></li>
+<li><a href="../moriarty/package-globals.html#ANALYZER_NORMEN" target="main">ANALYZER_NORMEN</a></li>
+<li><a href="../moriarty/package-globals.html#ANALYZER_NOSTOPEN" target="main">ANALYZER_NOSTOPEN</a></li>
+<li><a href="../moriarty/package-globals.html#ANALYZER_STANDARDCJK" target="main">ANALYZER_STANDARDCJK</a></li>
+<li><a href="../moriarty/package-globals.html#ANALYZER_STANDARDDE" target="main">ANALYZER_STANDARDDE</a></li>
+<li><a href="../moriarty/package-globals.html#ANALYZER_STANDARDEL" target="main">ANALYZER_STANDARDEL</a></li>
+<li><a href="../moriarty/package-globals.html#ANALYZER_STANDARDEN" target="main">ANALYZER_STANDARDEN</a></li>
+<li><a href="../moriarty/package-globals.html#ANALYZER_STANDARDFR" target="main">ANALYZER_STANDARDFR</a></li>
+<li><a href="../moriarty/package-globals.html#ANALYZER_STANDARDNL" target="main">ANALYZER_STANDARDNL</a></li>
+<li><a href="../moriarty/package-globals.html#BF_ANALYZER" target="main">BF_ANALYZER</a></li>
+<li><a href="../moriarty/package-globals.html#BF_CREDENTIAL" target="main">BF_CREDENTIAL</a></li>
+<li><a href="../moriarty/package-globals.html#BF_FIELDWEIGHT" target="main">BF_FIELDWEIGHT</a></li>
+<li><a href="../moriarty/package-globals.html#BF_GROUP" target="main">BF_GROUP</a></li>
+<li><a href="../moriarty/package-globals.html#BF_GROUPREF" target="main">BF_GROUPREF</a></li>
+<li><a href="../moriarty/package-globals.html#BF_JOBREQUEST" target="main">BF_JOBREQUEST</a></li>
+<li><a href="../moriarty/package-globals.html#BF_JOBTYPE" target="main">BF_JOBTYPE</a></li>
+<li><a href="../moriarty/package-globals.html#BF_MD5CREDENTIAL" target="main">BF_MD5CREDENTIAL</a></li>
+<li><a href="../moriarty/package-globals.html#BF_REINDEXJOB" target="main">BF_REINDEXJOB</a></li>
+<li><a href="../moriarty/package-globals.html#BF_RESETDATAJOB" target="main">BF_RESETDATAJOB</a></li>
+<li><a href="../moriarty/package-globals.html#BF_RESTOREJOB" target="main">BF_RESTOREJOB</a></li>
+<li><a href="../moriarty/package-globals.html#BF_SNAPSHOTJOB" target="main">BF_SNAPSHOTJOB</a></li>
+<li><a href="../moriarty/package-globals.html#BF_SNAPSHOTURI" target="main">BF_SNAPSHOTURI</a></li>
+<li><a href="../moriarty/package-globals.html#BF_STARTTIME" target="main">BF_STARTTIME</a></li>
+<li><a href="../moriarty/package-globals.html#BF_STORE" target="main">BF_STORE</a></li>
+<li><a href="../moriarty/package-globals.html#BF_STOREGROUP" target="main">BF_STOREGROUP</a></li>
+<li><a href="../moriarty/package-globals.html#BF_STOREGROUPREQUEST" target="main">BF_STOREGROUPREQUEST</a></li>
+<li><a href="../moriarty/package-globals.html#BF_STOREREF" target="main">BF_STOREREF</a></li>
+<li><a href="../moriarty/package-globals.html#BF_STORETEMPLATE" target="main">BF_STORETEMPLATE</a></li>
+<li><a href="../moriarty/package-globals.html#BF_USER" target="main">BF_USER</a></li>
+<li><a href="../moriarty/package-globals.html#BF_WEIGHT" target="main">BF_WEIGHT</a></li>
+<li><a href="../moriarty/package-globals.html#CS_ADDITION" target="main">CS_ADDITION</a></li>
+<li><a href="../moriarty/package-globals.html#CS_CHANGEREASON" target="main">CS_CHANGEREASON</a></li>
+<li><a href="../moriarty/package-globals.html#CS_CHANGESET" target="main">CS_CHANGESET</a></li>
+<li><a href="../moriarty/package-globals.html#CS_CREATEDDATE" target="main">CS_CREATEDDATE</a></li>
+<li><a href="../moriarty/package-globals.html#CS_CREATORNAME" target="main">CS_CREATORNAME</a></li>
+<li><a href="../moriarty/package-globals.html#CS_REMOVAL" target="main">CS_REMOVAL</a></li>
+<li><a href="../moriarty/package-globals.html#CS_SUBJECTOFCHANGE" target="main">CS_SUBJECTOFCHANGE</a></li>
+<li><a href="../moriarty/package-globals.html#DCT_ABSTRACT" target="main">DCT_ABSTRACT</a></li>
+<li><a href="../moriarty/package-globals.html#DCT_PROVENANCE" target="main">DCT_PROVENANCE</a></li>
+<li><a href="../moriarty/package-globals.html#DC_CREATOR" target="main">DC_CREATOR</a></li>
+<li><a href="../moriarty/package-globals.html#DC_DATE" target="main">DC_DATE</a></li>
+<li><a href="../moriarty/package-globals.html#DC_DESCRIPTION" target="main">DC_DESCRIPTION</a></li>
+<li><a href="../moriarty/package-globals.html#DC_TITLE" target="main">DC_TITLE</a></li>
+<li><a href="../moriarty/package-globals.html#FOAF_DOCUMENT" target="main">FOAF_DOCUMENT</a></li>
+<li><a href="../moriarty/package-globals.html#FOAF_ISPRIMARYTOPICOF" target="main">FOAF_ISPRIMARYTOPICOF</a></li>
+<li><a href="../moriarty/package-globals.html#FOAF_NAME" target="main">FOAF_NAME</a></li>
+<li><a href="../moriarty/package-globals.html#FOAF_NICK" target="main">FOAF_NICK</a></li>
+<li><a href="../moriarty/package-globals.html#FOAF_PAGE" target="main">FOAF_PAGE</a></li>
+<li><a href="../moriarty/package-globals.html#FOAF_PRIMARYTOPIC" target="main">FOAF_PRIMARYTOPIC</a></li>
+<li><a href="../moriarty/package-globals.html#FOAF_TOPIC" target="main">FOAF_TOPIC</a></li>
+<li><a href="../moriarty/package-globals.html#FRM_MAPPEDDATATYPEPROPERTY" target="main">FRM_MAPPEDDATATYPEPROPERTY</a></li>
+<li><a href="../moriarty/package-globals.html#FRM_NAME" target="main">FRM_NAME</a></li>
+<li><a href="../moriarty/package-globals.html#FRM_PROPERTY" target="main">FRM_PROPERTY</a></li>
+<li><a href="../moriarty/package-globals.html#MIME_FORMENCODED" target="main">MIME_FORMENCODED</a></li>
+<li><a href="../moriarty/package-globals.html#MIME_RDFXML" target="main">MIME_RDFXML</a></li>
+<li><a href="../moriarty/package-globals.html#MIME_RSS" target="main">MIME_RSS</a></li>
+<li><a href="../moriarty/package-globals.html#MIME_SPARQLRESULTS" target="main">MIME_SPARQLRESULTS</a></li>
+<li><a href="../moriarty/package-globals.html#MIME_XML" target="main">MIME_XML</a></li>
+<li><a href="../moriarty/package-globals.html#MORIARTY_ARC_DIR" target="main">MORIARTY_ARC_DIR</a></li>
+<li><a href="../moriarty/package-globals.html#MORIARTY_DIR" target="main">MORIARTY_DIR</a></li>
+<li><a href="../moriarty/package-globals.html#MORIARTY_PHPUNIT_DIR" target="main">MORIARTY_PHPUNIT_DIR</a></li>
+<li><a href="../moriarty/package-globals.html#MORIARTY_TEST_DIR" target="main">MORIARTY_TEST_DIR</a></li>
+<li><a href="../moriarty/package-globals.html#OS_ITEMSPERPAGE" target="main">OS_ITEMSPERPAGE</a></li>
+<li><a href="../moriarty/package-globals.html#OS_STARTINDEX" target="main">OS_STARTINDEX</a></li>
+<li><a href="../moriarty/package-globals.html#OS_TOTALRESULTS" target="main">OS_TOTALRESULTS</a></li>
+<li><a href="../moriarty/package-globals.html#OUTPUT_TYPE_HTML" target="main">OUTPUT_TYPE_HTML</a></li>
+<li><a href="../moriarty/package-globals.html#OUTPUT_TYPE_JSON" target="main">OUTPUT_TYPE_JSON</a></li>
+<li><a href="../moriarty/package-globals.html#OUTPUT_TYPE_NTRIPLES" target="main">OUTPUT_TYPE_NTRIPLES</a></li>
+<li><a href="../moriarty/package-globals.html#OUTPUT_TYPE_RDF" target="main">OUTPUT_TYPE_RDF</a></li>
+<li><a href="../moriarty/package-globals.html#OUTPUT_TYPE_TURTLE" target="main">OUTPUT_TYPE_TURTLE</a></li>
+<li><a href="../moriarty/package-globals.html#OUTPUT_TYPE_XML" target="main">OUTPUT_TYPE_XML</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_ANNOTATIONPROPERTY" target="main">OWL_ANNOTATIONPROPERTY</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_CLASS" target="main">OWL_CLASS</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_COMPLEMENTOF" target="main">OWL_COMPLEMENTOF</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_DATATYPEPROPERTY" target="main">OWL_DATATYPEPROPERTY</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_DISJOINTWITH" target="main">OWL_DISJOINTWITH</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_EQUIVALENTCLASS" target="main">OWL_EQUIVALENTCLASS</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_EQUIVALENTPROPERTY" target="main">OWL_EQUIVALENTPROPERTY</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_FUNCTIONALPROPERTY" target="main">OWL_FUNCTIONALPROPERTY</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_INVERSEFUNCTIONALPROPERTY" target="main">OWL_INVERSEFUNCTIONALPROPERTY</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_INVERSEOF" target="main">OWL_INVERSEOF</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_OBJECTPROPERTY" target="main">OWL_OBJECTPROPERTY</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_SAMEAS" target="main">OWL_SAMEAS</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_SYMMETRICPROPERTY" target="main">OWL_SYMMETRICPROPERTY</a></li>
+<li><a href="../moriarty/package-globals.html#OWL_TRANSITIVEPROPERTY" target="main">OWL_TRANSITIVEPROPERTY</a></li>
+<li><a href="../moriarty/package-globals.html#RDFS_CLASS" target="main">RDFS_CLASS</a></li>
+<li><a href="../moriarty/package-globals.html#RDFS_COMMENT" target="main">RDFS_COMMENT</a></li>
+<li><a href="../moriarty/package-globals.html#RDFS_DATATYPE" target="main">RDFS_DATATYPE</a></li>
+<li><a href="../moriarty/package-globals.html#RDFS_DOMAIN" target="main">RDFS_DOMAIN</a></li>
+<li><a href="../moriarty/package-globals.html#RDFS_ISDEFINEDBY" target="main">RDFS_ISDEFINEDBY</a></li>
+<li><a href="../moriarty/package-globals.html#RDFS_LABEL" target="main">RDFS_LABEL</a></li>
+<li><a href="../moriarty/package-globals.html#RDFS_LITERAL" target="main">RDFS_LITERAL</a></li>
+<li><a href="../moriarty/package-globals.html#RDFS_MEMBER" target="main">RDFS_MEMBER</a></li>
+<li><a href="../moriarty/package-globals.html#RDFS_RANGE" target="main">RDFS_RANGE</a></li>
+<li><a href="../moriarty/package-globals.html#RDFS_RESOURCE" target="main">RDFS_RESOURCE</a></li>
+<li><a href="../moriarty/package-globals.html#RDFS_SEEALSO" target="main">RDFS_SEEALSO</a></li>
+<li><a href="../moriarty/package-globals.html#RDFS_SUBCLASSOF" target="main">RDFS_SUBCLASSOF</a></li>
+<li><a href="../moriarty/package-globals.html#RDFS_SUBPROPERTYOF" target="main">RDFS_SUBPROPERTYOF</a></li>
+<li><a href="../moriarty/package-globals.html#RDF_FIRST" target="main">RDF_FIRST</a></li>
+<li><a href="../moriarty/package-globals.html#RDF_LIST" target="main">RDF_LIST</a></li>
+<li><a href="../moriarty/package-globals.html#RDF_OBJECT" target="main">RDF_OBJECT</a></li>
+<li><a href="../moriarty/package-globals.html#RDF_PREDICATE" target="main">RDF_PREDICATE</a></li>
+<li><a href="../moriarty/package-globals.html#RDF_PROPERTY" target="main">RDF_PROPERTY</a></li>
+<li><a href="../moriarty/package-globals.html#RDF_REST" target="main">RDF_REST</a></li>
+<li><a href="../moriarty/package-globals.html#RDF_STATEMENT" target="main">RDF_STATEMENT</a></li>
+<li><a href="../moriarty/package-globals.html#RDF_SUBJECT" target="main">RDF_SUBJECT</a></li>
+<li><a href="../moriarty/package-globals.html#RDF_TYPE" target="main">RDF_TYPE</a></li>
+<li><a href="../moriarty/package-globals.html#RDF_VALUE" target="main">RDF_VALUE</a></li>
+<li><a href="../moriarty/package-globals.html#RDF_XMLLITERAL" target="main">RDF_XMLLITERAL</a></li>
+<li><a href="../moriarty/package-globals.html#RSS_DESCRIPTION" target="main">RSS_DESCRIPTION</a></li>
+<li><a href="../moriarty/package-globals.html#RSS_ITEM" target="main">RSS_ITEM</a></li>
+<li><a href="../moriarty/package-globals.html#RSS_ITEMS" target="main">RSS_ITEMS</a></li>
+<li><a href="../moriarty/package-globals.html#RSS_LINK" target="main">RSS_LINK</a></li>
+<li><a href="../moriarty/package-globals.html#RSS_TITLE" target="main">RSS_TITLE</a></li>
+</ul>
+
+</body>
+
+</html>

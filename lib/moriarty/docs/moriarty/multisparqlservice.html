@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+
+<meta name="generator" content="PHPDoctor 2RC2 (http://phpdoctor.sourceforge.net/)">
+<meta name="when" content="Tue, 09 Dec 2008 09:11:43 +0000">
+
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+<link rel="start" href="../overview-summary.html">
+
+<title>MultiSparqlService (Moriarty)</title>
+
+</head>
+<body id="definition" onload="parent.document.title=document.title;">
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/multisparqlservice.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<div class="qualifiedName">Moriarty.MultiSparqlService</div>
+
+<h1>Class MultiSparqlService</h1>
+
+<pre class="tree"><a href="../moriarty/sparqlservicebase.html">SparqlServiceBase</a><br>  |<br>  +--<strong>MultiSparqlService</strong><br /></pre>
+
+<hr>
+
+<p class="signature">public  class <strong>MultiSparqlService</strong><br>extends <a href="../moriarty/sparqlservicebase.html">SparqlServiceBase</a>
+
+</p>
+
+<div class="comment" id="overview_description"><p>
+Represents a store's multi sparql service</p></div>
+
+<dl>
+<dt>See Also:</dt>
+<dd><a href="http://n2.talis.com/wiki/Store_Multisparql_Service">http://n2.talis.com/wiki/Store_Multisparql_Service</a></dd>
+</dl>
+<hr>
+
+<table id="summary_method">
+<tr><th colspan="2">Method Summary</th></tr>
+<tr>
+<td class="type"> <a href="../moriarty/httpresponse.html">HttpResponse</a></td>
+<td class="description"><p class="name"><a href="#describe()">describe</a>(mixed uri, array graphs)</p><p class="description">
+Obtain a bounded description of a given resource</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#describe_to_triple_list()">describe_to_triple_list</a>(mixed uri, mixed graphs)</p><p class="description"></p></td>
+</tr>
+</table>
+
+<table class="inherit">
+<tr><th colspan="2">Methods inherited from Moriarty.SparqlServiceBase</th></tr>
+<tr><td><a href="../moriarty/sparqlservicebase.html#ask()">ask</a>, <a href="../moriarty/sparqlservicebase.html#construct_to_simple_graph()">construct_to_simple_graph</a>, <a href="../moriarty/sparqlservicebase.html#construct_to_triple_list()">construct_to_triple_list</a>, <a href="../moriarty/sparqlservicebase.html#describe()">describe</a>, <a href="../moriarty/sparqlservicebase.html#describe_to_simple_graph()">describe_to_simple_graph</a>, <a href="../moriarty/sparqlservicebase.html#describe_to_triple_list()">describe_to_triple_list</a>, <a href="../moriarty/sparqlservicebase.html#graph()">graph</a>, <a href="../moriarty/sparqlservicebase.html#graph_to_simple_graph()">graph_to_simple_graph</a>, <a href="../moriarty/sparqlservicebase.html#graph_to_triple_list()">graph_to_triple_list</a>, <a href="../moriarty/sparqlservicebase.html#parse_ask_results()">parse_ask_results</a>, <a href="../moriarty/sparqlservicebase.html#parse_select_results()">parse_select_results</a>, <a href="../moriarty/sparqlservicebase.html#query()">query</a>, <a href="../moriarty/sparqlservicebase.html#select()">select</a>, <a href="../moriarty/sparqlservicebase.html#select_to_array()">select_to_array</a></td></tr></table>
+
+<h2 id="detail_method">Method Detail</h2>
+<h3 id="describe()">describe</h3>
+<code class="signature">public  <a href="../moriarty/httpresponse.html">HttpResponse</a> <strong>describe</strong>(mixed uri, array graphs)</code>
+<div class="details">
+<p>
+Obtain a bounded description of a given resource</p><dl>
+<dt>Parameters:</dt>
+<dd>uri - the URI of the resource to be described or an array of URIs</dd>
+<dd>graphs - the list of graph URIs the description should be drawn from</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="describe_to_triple_list()">describe_to_triple_list</h3>
+<code class="signature">public  void <strong>describe_to_triple_list</strong>(mixed uri, mixed graphs)</code>
+<div class="details">
+<p></p><dl>
+<dt>Deprecated:</dt>
+<dd>triple lists are deprecated</dd>
+</dl>
+</div>
+
+<hr>
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/multisparqlservice.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<p id="footer">This document was generated by <a href="http://phpdoctor.sourceforge.net/">PHPDoctor: The PHP Documentation Creator</a></p>
+
+</body>
+
+</html>

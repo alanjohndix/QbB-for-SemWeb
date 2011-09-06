@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/23/branches/sparql_optimiser/lib/arc/sparqlscript
+END
+ARC2_SPARQLScriptParser.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/23/branches/sparql_optimiser/lib/arc/sparqlscript/ARC2_SPARQLScriptParser.php
+END
+ARC2_SPARQLScriptProcessor.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/23/branches/sparql_optimiser/lib/arc/sparqlscript/ARC2_SPARQLScriptProcessor.php
+END

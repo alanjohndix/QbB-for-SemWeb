@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+
+<meta name="generator" content="PHPDoctor 2RC2 (http://phpdoctor.sourceforge.net/)">
+<meta name="when" content="Tue, 09 Dec 2008 09:11:43 +0000">
+
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+<link rel="start" href="../overview-summary.html">
+
+<title>HttpRequest (Moriarty)</title>
+
+</head>
+<body id="definition" onload="parent.document.title=document.title;">
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/httprequest.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<div class="qualifiedName">Moriarty.HttpRequest</div>
+
+<h1>Class HttpRequest</h1>
+
+<pre class="tree"><strong>HttpRequest</strong><br /></pre>
+
+<hr>
+
+<p class="signature">public  class <strong>HttpRequest</strong></p>
+
+<div class="comment" id="overview_description"><p>
+Represents an HTTP protocol request.
+/</p></div>
+
+<hr>
+
+<table id="summary_constr">
+<tr><th colspan="2">Constructor Summary</th></tr>
+<tr>
+<td class="description"><p class="name"><a href="#HttpRequest()">HttpRequest</a>(string method, string uri, <a href="../moriarty/credentials.html">Credentials</a> credentials)</p><p class="description">
+Create a new instance of this class</p></td>
+</tr>
+</table>
+
+<table id="summary_method">
+<tr><th colspan="2">Method Summary</th></tr>
+<tr>
+<td class="type"> <a href="../moriarty/httpresponse.html">HttpResponse</a></td>
+<td class="description"><p class="name"><a href="#execute()">execute</a>()</p><p class="description">
+Issue the HTTP request</p></td>
+</tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#get_body()">get_body</a>()</p><p class="description">
+Get the content to be sent with the request</p></td>
+</tr>
+<tr>
+<td class="type"> array</td>
+<td class="description"><p class="name"><a href="#get_headers()">get_headers</a>()</p><p class="description">
+Obtain the HTTP headers to be sent with this request</p></td>
+</tr>
+<tr>
+<td class="type">private  void</td>
+<td class="description"><p class="name"><a href="#parse_response()">parse_response</a>(mixed response)</p><p class="description"></p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#set_accept()">set_accept</a>(string val)</p><p class="description">
+Set the HTTP accept header for the request</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#set_body()">set_body</a>(string val)</p><p class="description">
+Set content to be sent with the request</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#set_content_type()">set_content_type</a>(string val)</p><p class="description">
+Set the HTTP content-type header for the request</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#set_if_match()">set_if_match</a>(string val)</p><p class="description">
+Set the HTTP if-match header for the request</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#set_if_none_match()">set_if_none_match</a>(string val)</p><p class="description">
+Set the HTTP if-none-match header for the request</p></td>
+</tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#to_string()">to_string</a>()</p><p class="description">
+Obtain a string representation of this request</p></td>
+</tr>
+</table>
+
+<h2 id="detail_constr">Constructor Detail</h2>
+<h3 id="HttpRequest()">HttpRequest</h3>
+<code class="signature">public <strong>HttpRequest</strong>(string method, string uri, <a href="../moriarty/credentials.html">Credentials</a> credentials)</code>
+<div class="details">
+<p>
+Create a new instance of this class</p><dl>
+<dt>Parameters:</dt>
+<dd>method - the HTTP method to issue (i.e. GET, POST, PUT etc)</dd>
+<dd>uri - the URI to issue the request to</dd>
+<dd>credentials - the credentials to use for secure requests (optional)</dd>
+</dl>
+</div>
+
+<hr>
+
+<h2 id="detail_method">Method Detail</h2>
+<h3 id="execute()">execute</h3>
+<code class="signature">public  <a href="../moriarty/httpresponse.html">HttpResponse</a> <strong>execute</strong>()</code>
+<div class="details">
+<p>
+Issue the HTTP request</p></div>
+
+<hr>
+
+<h3 id="get_body()">get_body</h3>
+<code class="signature">public  string <strong>get_body</strong>()</code>
+<div class="details">
+<p>
+Get the content to be sent with the request</p><dl>
+<dt>Returns:</dt>
+<dd>the content to be sent</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="get_headers()">get_headers</h3>
+<code class="signature">public  array <strong>get_headers</strong>()</code>
+<div class="details">
+<p>
+Obtain the HTTP headers to be sent with this request</p><dl>
+<dt>Returns:</dt>
+<dd>headers in the format "name:value"</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="parse_response()">parse_response</h3>
+<code class="signature">private  void <strong>parse_response</strong>(mixed response)</code>
+<div class="details">
+<p></p></div>
+
+<hr>
+
+<h3 id="set_accept()">set_accept</h3>
+<code class="signature">public  void <strong>set_accept</strong>(string val)</code>
+<div class="details">
+<p>
+Set the HTTP accept header for the request</p><dl>
+<dt>Parameters:</dt>
+<dd>val - the media types to be used as the accept header value</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="set_body()">set_body</h3>
+<code class="signature">public  void <strong>set_body</strong>(string val)</code>
+<div class="details">
+<p>
+Set content to be sent with the request</p><dl>
+<dt>Parameters:</dt>
+<dd>val - the content to be sent</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="set_content_type()">set_content_type</h3>
+<code class="signature">public  void <strong>set_content_type</strong>(string val)</code>
+<div class="details">
+<p>
+Set the HTTP content-type header for the request</p><dl>
+<dt>Parameters:</dt>
+<dd>val - the media type to be used as the content-type header value</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="set_if_match()">set_if_match</h3>
+<code class="signature">public  void <strong>set_if_match</strong>(string val)</code>
+<div class="details">
+<p>
+Set the HTTP if-match header for the request</p><dl>
+<dt>Parameters:</dt>
+<dd>val - the etag to be used as the if-match header value</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="set_if_none_match()">set_if_none_match</h3>
+<code class="signature">public  void <strong>set_if_none_match</strong>(string val)</code>
+<div class="details">
+<p>
+Set the HTTP if-none-match header for the request</p><dl>
+<dt>Parameters:</dt>
+<dd>val - the etag to be used as the if-none-match header value</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="to_string()">to_string</h3>
+<code class="signature">public  string <strong>to_string</strong>()</code>
+<div class="details">
+<p>
+Obtain a string representation of this request</p></div>
+
+<hr>
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/httprequest.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<p id="footer">This document was generated by <a href="http://phpdoctor.sourceforge.net/">PHPDoctor: The PHP Documentation Creator</a></p>
+
+</body>
+
+</html>

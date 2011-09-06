@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+
+<meta name="generator" content="PHPDoctor 2RC2 (http://phpdoctor.sourceforge.net/)">
+<meta name="when" content="Tue, 09 Dec 2008 09:11:43 +0000">
+
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+<link rel="start" href="../overview-summary.html">
+
+<title>ResourceList (Moriarty)</title>
+
+</head>
+<body id="definition" onload="parent.document.title=document.title;">
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/resourcelist.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<div class="qualifiedName">Moriarty.ResourceList</div>
+
+<h1>Class ResourceList</h1>
+
+<pre class="tree"><strong>ResourceList</strong><br /></pre>
+
+<hr>
+
+<p class="signature">public  class <strong>ResourceList</strong></p>
+
+<div class="comment" id="overview_description"><p>
+Represents a list of resources returned from a contentbox search.
+/</p></div>
+
+<hr>
+
+<table id="summary_field">
+<tr><th colspan="2">Field Summary</th></tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#description">$description</a></p><p class="description">
+The description of the search results</p></td>
+</tr>
+<tr>
+<td class="type"> array</td>
+<td class="description"><p class="name"><a href="#items">$items</a></p><p class="description">
+An array of the search results as a list of triples</p></td>
+</tr>
+<tr>
+<td class="type"> int</td>
+<td class="description"><p class="name"><a href="#items_per_page">$items_per_page</a></p><p class="description">
+The number of search results returned per page. </p></td>
+</tr>
+<tr>
+<td class="type"> int</td>
+<td class="description"><p class="name"><a href="#start_index">$start_index</a></p><p class="description">
+The index of the first search result in the current set of search results. </p></td>
+</tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#title">$title</a></p><p class="description">
+The title of the search results</p></td>
+</tr>
+<tr>
+<td class="type"> int</td>
+<td class="description"><p class="name"><a href="#total_results">$total_results</a></p><p class="description">
+The total number of results matching the search terms</p></td>
+</tr>
+</table>
+
+<h2 id="detail_field">Field Detail</h2>
+<h3 id="description">description</h3>
+<code class="signature">public  string <strong>$description</strong></code>
+<div class="details">
+<p>
+The description of the search results</p></div>
+
+<hr>
+
+<h3 id="items">items</h3>
+<code class="signature">public  array <strong>$items</strong></code>
+<div class="details">
+<p>
+An array of the search results as a list of triples</p></div>
+
+<hr>
+
+<h3 id="items_per_page">items_per_page</h3>
+<code class="signature">public  int <strong>$items_per_page</strong></code>
+<div class="details">
+<p>
+The number of search results returned per page. </p></div>
+
+<hr>
+
+<h3 id="start_index">start_index</h3>
+<code class="signature">public  int <strong>$start_index</strong></code>
+<div class="details">
+<p>
+The index of the first search result in the current set of search results. </p></div>
+
+<hr>
+
+<h3 id="title">title</h3>
+<code class="signature">public  string <strong>$title</strong></code>
+<div class="details">
+<p>
+The title of the search results</p></div>
+
+<hr>
+
+<h3 id="total_results">total_results</h3>
+<code class="signature">public  int <strong>$total_results</strong></code>
+<div class="details">
+<p>
+The total number of results matching the search terms</p></div>
+
+<hr>
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/resourcelist.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<p id="footer">This document was generated by <a href="http://phpdoctor.sourceforge.net/">PHPDoctor: The PHP Documentation Creator</a></p>
+
+</body>
+
+</html>

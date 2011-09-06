@@ -1,0 +1,54 @@
+8
+
+dir
+24
+https://omnius.googlecode.com/svn/branches/sparql_optimiser/lib/arc/sparqlscript
+https://omnius.googlecode.com/svn
+
+
+
+2010-11-12T14:32:00.906352Z
+23
+nadeem.shabir
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+2087f12c-00e1-11de-a3ef-1f8437fb274a
+
+ARC2_SPARQLScriptParser.php
+file
+
+
+
+
+2010-11-12T14:51:34.000000Z
+77086bb63ed636228edc47bbbdfffa1f
+2010-11-12T14:32:00.906352Z
+23
+nadeem.shabir
+has-props
+
+ARC2_SPARQLScriptProcessor.php
+file
+
+
+
+
+2010-11-12T14:51:34.000000Z
+7ef2367c5a1d6d4d9587fc9f2d134e95
+2010-11-12T14:32:00.906352Z
+23
+nadeem.shabir
+has-props
+

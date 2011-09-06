@@ -1,0 +1,616 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+
+<meta name="generator" content="PHPDoctor 2RC2 (http://phpdoctor.sourceforge.net/)">
+<meta name="when" content="Tue, 09 Dec 2008 09:11:43 +0000">
+
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+<link rel="start" href="../overview-summary.html">
+
+<title>SimpleGraph (Moriarty)</title>
+
+</head>
+<body id="definition" onload="parent.document.title=document.title;">
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/simplegraph.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<div class="qualifiedName">Moriarty.SimpleGraph</div>
+
+<h1>Class SimpleGraph</h1>
+
+<pre class="tree"><strong>SimpleGraph</strong><br /></pre>
+
+<hr>
+
+<p class="signature">public  class <strong>SimpleGraph</strong></p>
+
+<div class="comment" id="overview_description"><p>
+Represents an RDF graph and provides some simple functions for traversing and manipulating it.
+/</p></div>
+
+<hr>
+
+<table id="summary_method">
+<tr><th colspan="2">Method Summary</th></tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#add_graph()">add_graph</a>(<a href="../moriarty/simplegraph.html">SimpleGraph</a> g)</p><p class="description">
+Add the triples in the supplied graph to the current graph</p></td>
+</tr>
+<tr>
+<td class="type"> boolean</td>
+<td class="description"><p class="name"><a href="#add_literal_triple()">add_literal_triple</a>(string s, string p, string o, string lang, string dt)</p><p class="description">
+Adds a triple with a literal object to the graph</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#add_rdfxml()">add_rdfxml</a>(string rdfxml, string base)</p><p class="description">
+Add the triples parsed from the supplied RDF/XML to the graph</p></td>
+</tr>
+<tr>
+<td class="type"> boolean</td>
+<td class="description"><p class="name"><a href="#add_resource_triple()">add_resource_triple</a>(string s, string p, string o)</p><p class="description">
+Adds a triple with a resource object to the graph</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#add_turtle()">add_turtle</a>(string turtle, string base)</p><p class="description">
+Add the triples parsed from the supplied Turtle to the graph</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#from_json()">from_json</a>(string json)</p><p class="description">
+Replace the triples in the graph with those parsed from the supplied JSON</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#from_rdfxml()">from_rdfxml</a>(string rdfxml, string base)</p><p class="description">
+Replace the triples in the graph with those parsed from the supplied RDF/XML</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#from_turtle()">from_turtle</a>(string turtle, string base)</p><p class="description">
+Replace the triples in the graph with those parsed from the supplied Turtle</p></td>
+</tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#get_first_literal()">get_first_literal</a>(string s, string p, string default)</p><p class="description">
+Fetch the first literal value for a given subject and predicate. </p></td>
+</tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#get_first_resource()">get_first_resource</a>(string s, string p, string default)</p><p class="description">
+Fetch the first resource value for a given subject and predicate. </p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#get_index()">get_index</a>()</p><p class="description">
+Get a copy of the graph's triple index</p></td>
+</tr>
+<tr>
+<td class="type"> array</td>
+<td class="description"><p class="name"><a href="#get_literal_triple_values()">get_literal_triple_values</a>(string s, string p)</p><p class="description">
+Fetch the literal values for a given subject and predicate. </p></td>
+</tr>
+<tr>
+<td class="type"> array</td>
+<td class="description"><p class="name"><a href="#get_resource_triple_values()">get_resource_triple_values</a>(string s, string p)</p><p class="description">
+Fetch the resource values for a given subject and predicate. </p></td>
+</tr>
+<tr>
+<td class="type"> array</td>
+<td class="description"><p class="name"><a href="#get_subject_property_values()">get_subject_property_values</a>(string s, string p)</p><p class="description">
+Fetch the values for a given subject and predicate. </p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#get_triples()">get_triples</a>()</p><p class="description"></p></td>
+</tr>
+<tr>
+<td class="type"> boolean</td>
+<td class="description"><p class="name"><a href="#has_literal_triple()">has_literal_triple</a>(string s, string p, string o)</p><p class="description">
+Tests whether the graph contains the given triple</p></td>
+</tr>
+<tr>
+<td class="type"> boolean</td>
+<td class="description"><p class="name"><a href="#has_resource_triple()">has_resource_triple</a>(string s, string p, string o)</p><p class="description">
+Tests whether the graph contains the given triple</p></td>
+</tr>
+<tr>
+<td class="type"> boolean</td>
+<td class="description"><p class="name"><a href="#is_empty()">is_empty</a>()</p><p class="description">
+Tests whether the graph contains any triples</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#remove_all_triples()">remove_all_triples</a>()</p><p class="description">
+Clears all triples out of the graph
+/</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#remove_property_values()">remove_property_values</a>(string s, string p)</p><p class="description">
+Removes all triples with the given subject and predicate</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#remove_resource_triple()">remove_resource_triple</a>(string s, string p, string o)</p><p class="description">
+Remove a triple with a resource object from the graph</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#remove_triples_about()">remove_triples_about</a>(string s)</p><p class="description">
+Remove all triples having the supplied subject</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#set_namespace_mapping()">set_namespace_mapping</a>(string prefix, string uri)</p><p class="description">
+Map a portion of a URI to a short prefix for use when serialising the graph</p></td>
+</tr>
+<tr>
+<td class="type"> boolean</td>
+<td class="description"><p class="name"><a href="#subject_has_property()">subject_has_property</a>(string s, string p)</p><p class="description">
+Tests whether the graph contains a triple with the given subject and predicate</p></td>
+</tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#to_json()">to_json</a>()</p><p class="description">
+Serialise the graph to JSON</p></td>
+</tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#to_ntriples()">to_ntriples</a>()</p><p class="description">
+Serialise the graph to N-Triples</p></td>
+</tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#to_rdfxml()">to_rdfxml</a>()</p><p class="description">
+Serialise the graph to RDF/XML</p></td>
+</tr>
+<tr>
+<td class="type"> string</td>
+<td class="description"><p class="name"><a href="#to_turtle()">to_turtle</a>()</p><p class="description">
+Serialise the graph to Turtle</p></td>
+</tr>
+</table>
+
+<h2 id="detail_method">Method Detail</h2>
+<h3 id="add_graph()">add_graph</h3>
+<code class="signature">public  void <strong>add_graph</strong>(<a href="../moriarty/simplegraph.html">SimpleGraph</a> g)</code>
+<div class="details">
+<p>
+Add the triples in the supplied graph to the current graph</p><dl>
+<dt>Parameters:</dt>
+<dd>g - the graph to read</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="add_literal_triple()">add_literal_triple</h3>
+<code class="signature">public  boolean <strong>add_literal_triple</strong>(string s, string p, string o, string lang, string dt)</code>
+<div class="details">
+<p>
+Adds a triple with a literal object to the graph</p><dl>
+<dt>Parameters:</dt>
+<dd>s - the subject of the triple, either a URI or a blank node in the format _:name</dd>
+<dd>p - the predicate of the triple as a URI</dd>
+<dd>o - the object of the triple as a string</dd>
+<dd>lang - the language code of the triple's object (optional)</dd>
+<dd>dt - the datatype URI of the triple's object (optional)</dd>
+<dt>Returns:</dt>
+<dd>true if the triple was new, false if it already existed in the graph</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="add_rdfxml()">add_rdfxml</h3>
+<code class="signature">public  void <strong>add_rdfxml</strong>(string rdfxml, string base)</code>
+<div class="details">
+<p>
+Add the triples parsed from the supplied RDF/XML to the graph</p><dl>
+<dt>Parameters:</dt>
+<dd>rdfxml - the RDF/XML to parse</dd>
+<dd>base - the base URI against which relative URIs in the RDF/XML document will be resolved</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="add_resource_triple()">add_resource_triple</h3>
+<code class="signature">public  boolean <strong>add_resource_triple</strong>(string s, string p, string o)</code>
+<div class="details">
+<p>
+Adds a triple with a resource object to the graph</p><dl>
+<dt>Parameters:</dt>
+<dd>s - the subject of the triple, either a URI or a blank node in the format _:name</dd>
+<dd>p - the predicate URI of the triple</dd>
+<dd>o - the object of the triple, either a URI or a blank node in the format _:name</dd>
+<dt>Returns:</dt>
+<dd>true if the triple was new, false if it already existed in the graph</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="add_turtle()">add_turtle</h3>
+<code class="signature">public  void <strong>add_turtle</strong>(string turtle, string base)</code>
+<div class="details">
+<p>
+Add the triples parsed from the supplied Turtle to the graph</p><dl>
+<dt>See Also:</dt>
+<dd><a href="http://www.dajobe.org/2004/01/turtle">http://www.dajobe.org/2004/01/turtle</a></dd>
+<dt>Parameters:</dt>
+<dd>turtle - the Turtle to parse</dd>
+<dd>base - the base URI against which relative URIs in the Turtle document will be resolved</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="from_json()">from_json</h3>
+<code class="signature">public  void <strong>from_json</strong>(string json)</code>
+<div class="details">
+<p>
+Replace the triples in the graph with those parsed from the supplied JSON</p><dl>
+<dt>See Also:</dt>
+<dd><a href="http://n2.talis.com/wiki/RDF_JSON_Specification">http://n2.talis.com/wiki/RDF_JSON_Specification</a></dd>
+<dt>Parameters:</dt>
+<dd>json - the JSON to parse</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="from_rdfxml()">from_rdfxml</h3>
+<code class="signature">public  void <strong>from_rdfxml</strong>(string rdfxml, string base)</code>
+<div class="details">
+<p>
+Replace the triples in the graph with those parsed from the supplied RDF/XML</p><dl>
+<dt>Parameters:</dt>
+<dd>rdfxml - the RDF/XML to parse</dd>
+<dd>base - the base URI against which relative URIs in the RDF/XML document will be resolved</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="from_turtle()">from_turtle</h3>
+<code class="signature">public  void <strong>from_turtle</strong>(string turtle, string base)</code>
+<div class="details">
+<p>
+Replace the triples in the graph with those parsed from the supplied Turtle</p><dl>
+<dt>See Also:</dt>
+<dd><a href="http://www.dajobe.org/2004/01/turtle">http://www.dajobe.org/2004/01/turtle</a></dd>
+<dt>Parameters:</dt>
+<dd>turtle - the Turtle to parse</dd>
+<dd>base - the base URI against which relative URIs in the Turtle document will be resolved</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="get_first_literal()">get_first_literal</h3>
+<code class="signature">public  string <strong>get_first_literal</strong>(string s, string p, string default)</code>
+<div class="details">
+<p>
+Fetch the first literal value for a given subject and predicate. If there are multiple possible values then one is selected at random. </p><dl>
+<dt>Parameters:</dt>
+<dd>s - the subject to search for</dd>
+<dd>p - the predicate to search for</dd>
+<dd>default - a default value to use if no literal values are found</dd>
+<dt>Returns:</dt>
+<dd>the first literal value found or the supplied default if no values were found</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="get_first_resource()">get_first_resource</h3>
+<code class="signature">public  string <strong>get_first_resource</strong>(string s, string p, string default)</code>
+<div class="details">
+<p>
+Fetch the first resource value for a given subject and predicate. If there are multiple possible values then one is selected at random. </p><dl>
+<dt>Parameters:</dt>
+<dd>s - the subject to search for</dd>
+<dd>p - the predicate to search for</dd>
+<dd>default - a default value to use if no literal values are found</dd>
+<dt>Returns:</dt>
+<dd>the first resource value found or the supplied default if no values were found</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="get_index()">get_index</h3>
+<code class="signature">public  void <strong>get_index</strong>()</code>
+<div class="details">
+<p>
+Get a copy of the graph's triple index</p><dl>
+<dt>See Also:</dt>
+<dd><a href="http://n2.talis.com/wiki/RDF_PHP_Specification">http://n2.talis.com/wiki/RDF_PHP_Specification</a></dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="get_literal_triple_values()">get_literal_triple_values</h3>
+<code class="signature">public  array <strong>get_literal_triple_values</strong>(string s, string p)</code>
+<div class="details">
+<p>
+Fetch the literal values for a given subject and predicate. </p><dl>
+<dt>Parameters:</dt>
+<dd>s - the subject to search for</dd>
+<dd>p - the predicate to search for</dd>
+<dt>Returns:</dt>
+<dd>list of literals that are the objects of triples with the supplied subject and predicate</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="get_resource_triple_values()">get_resource_triple_values</h3>
+<code class="signature">public  array <strong>get_resource_triple_values</strong>(string s, string p)</code>
+<div class="details">
+<p>
+Fetch the resource values for a given subject and predicate. </p><dl>
+<dt>Parameters:</dt>
+<dd>s - the subject to search for</dd>
+<dd>p - the predicate to search for</dd>
+<dt>Returns:</dt>
+<dd>list of URIs and blank nodes that are the objects of triples with the supplied subject and predicate</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="get_subject_property_values()">get_subject_property_values</h3>
+<code class="signature">public  array <strong>get_subject_property_values</strong>(string s, string p)</code>
+<div class="details">
+<p>
+Fetch the values for a given subject and predicate. </p><dl>
+<dt>Parameters:</dt>
+<dd>s - the subject to search for</dd>
+<dd>p - the predicate to search for</dd>
+<dt>Returns:</dt>
+<dd>list of values of triples with the supplied subject and predicate</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="get_triples()">get_triples</h3>
+<code class="signature">public  void <strong>get_triples</strong>()</code>
+<div class="details">
+<p></p><dl>
+<dt>Deprecated:</dt>
+<dd>this is deprecated</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="has_literal_triple()">has_literal_triple</h3>
+<code class="signature">public  boolean <strong>has_literal_triple</strong>(string s, string p, string o)</code>
+<div class="details">
+<p>
+Tests whether the graph contains the given triple</p><dl>
+<dt>Parameters:</dt>
+<dd>s - the subject of the triple, either a URI or a blank node in the format _:name</dd>
+<dd>p - the predicate URI of the triple</dd>
+<dd>o - the object of the triple as a literal value</dd>
+<dt>Returns:</dt>
+<dd>true if the triple exists in the graph, false otherwise</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="has_resource_triple()">has_resource_triple</h3>
+<code class="signature">public  boolean <strong>has_resource_triple</strong>(string s, string p, string o)</code>
+<div class="details">
+<p>
+Tests whether the graph contains the given triple</p><dl>
+<dt>Parameters:</dt>
+<dd>s - the subject of the triple, either a URI or a blank node in the format _:name</dd>
+<dd>p - the predicate URI of the triple</dd>
+<dd>o - the object of the triple, either a URI or a blank node in the format _:name</dd>
+<dt>Returns:</dt>
+<dd>true if the triple exists in the graph, false otherwise</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="is_empty()">is_empty</h3>
+<code class="signature">public  boolean <strong>is_empty</strong>()</code>
+<div class="details">
+<p>
+Tests whether the graph contains any triples</p><dl>
+<dt>Returns:</dt>
+<dd>true if the graph contains no triples, false otherwise</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="remove_all_triples()">remove_all_triples</h3>
+<code class="signature">public  void <strong>remove_all_triples</strong>()</code>
+<div class="details">
+<p>
+Clears all triples out of the graph
+/</p></div>
+
+<hr>
+
+<h3 id="remove_property_values()">remove_property_values</h3>
+<code class="signature">public  void <strong>remove_property_values</strong>(string s, string p)</code>
+<div class="details">
+<p>
+Removes all triples with the given subject and predicate</p><dl>
+<dt>Parameters:</dt>
+<dd>s - the subject of the triple, either a URI or a blank node in the format _:name</dd>
+<dd>p - the predicate URI of the triple</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="remove_resource_triple()">remove_resource_triple</h3>
+<code class="signature">public  void <strong>remove_resource_triple</strong>(string s, string p, string o)</code>
+<div class="details">
+<p>
+Remove a triple with a resource object from the graph</p><dl>
+<dt>Parameters:</dt>
+<dd>s - the subject of the triple, either a URI or a blank node in the format _:name</dd>
+<dd>p - the predicate URI of the triple</dd>
+<dd>o - the object of the triple, either a URI or a blank node in the format _:name</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="remove_triples_about()">remove_triples_about</h3>
+<code class="signature">public  void <strong>remove_triples_about</strong>(string s)</code>
+<div class="details">
+<p>
+Remove all triples having the supplied subject</p><dl>
+<dt>Parameters:</dt>
+<dd>s - the subject of the triple, either a URI or a blank node in the format _:name</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="set_namespace_mapping()">set_namespace_mapping</h3>
+<code class="signature">public  void <strong>set_namespace_mapping</strong>(string prefix, string uri)</code>
+<div class="details">
+<p>
+Map a portion of a URI to a short prefix for use when serialising the graph</p><dl>
+<dt>Parameters:</dt>
+<dd>prefix - the namespace prefix to associate with the URI</dd>
+<dd>uri - the URI to associate with the prefix</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="subject_has_property()">subject_has_property</h3>
+<code class="signature">public  boolean <strong>subject_has_property</strong>(string s, string p)</code>
+<div class="details">
+<p>
+Tests whether the graph contains a triple with the given subject and predicate</p><dl>
+<dt>Parameters:</dt>
+<dd>s - the subject of the triple, either a URI or a blank node in the format _:name</dd>
+<dd>p - the predicate URI of the triple</dd>
+<dt>Returns:</dt>
+<dd>true if a matching triple exists in the graph, false otherwise</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="to_json()">to_json</h3>
+<code class="signature">public  string <strong>to_json</strong>()</code>
+<div class="details">
+<p>
+Serialise the graph to JSON</p><dl>
+<dt>See Also:</dt>
+<dd><a href="http://n2.talis.com/wiki/RDF_JSON_Specification">http://n2.talis.com/wiki/RDF_JSON_Specification</a></dd>
+<dt>Returns:</dt>
+<dd>the JSON version of the graph</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="to_ntriples()">to_ntriples</h3>
+<code class="signature">public  string <strong>to_ntriples</strong>()</code>
+<div class="details">
+<p>
+Serialise the graph to N-Triples</p><dl>
+<dt>See Also:</dt>
+<dd><a href="http://www.w3.org/TR/rdf-testcases/#ntriples">http://www.w3.org/TR/rdf-testcases/#ntriples</a></dd>
+<dt>Returns:</dt>
+<dd>the N-Triples version of the graph</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="to_rdfxml()">to_rdfxml</h3>
+<code class="signature">public  string <strong>to_rdfxml</strong>()</code>
+<div class="details">
+<p>
+Serialise the graph to RDF/XML</p><dl>
+<dt>Returns:</dt>
+<dd>the RDF/XML version of the graph</dd>
+</dl>
+</div>
+
+<hr>
+
+<h3 id="to_turtle()">to_turtle</h3>
+<code class="signature">public  string <strong>to_turtle</strong>()</code>
+<div class="details">
+<p>
+Serialise the graph to Turtle</p><dl>
+<dt>See Also:</dt>
+<dd><a href="http://www.dajobe.org/2004/01/turtle">http://www.dajobe.org/2004/01/turtle</a></dd>
+<dt>Returns:</dt>
+<dd>the Turtle version of the graph</dd>
+</dl>
+</div>
+
+<hr>
+
+<div class="header">
+<h1>Moriarty</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../moriarty/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../moriarty/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../moriarty/simplegraph.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<p id="footer">This document was generated by <a href="http://phpdoctor.sourceforge.net/">PHPDoctor: The PHP Documentation Creator</a></p>
+
+</body>
+
+</html>
